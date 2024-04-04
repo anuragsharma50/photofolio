@@ -1,38 +1,139 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: hsl(220, 13%, 18%);
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.album-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: max-content;
+  border-radius: 4px;
+  text-align: center;
+  margin: 6px;
+  background-color: #e9e9e9;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.album-card svg {
+  background-color: white;
+  padding: 8px;
+  color: black;
+}
+
+.album-card:hover {
+  background-color: rgba(86, 140, 241, 0.788);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.albums {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* for Album */
+
+.album-container {
+  width: 90%;
+  margin: 8px auto;
+}
+
+.album-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  border-radius: 50%;
+  height: 24px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add-button {
+  padding: 8px;
+  border-color: #3773e9;
+  background-color: #deeef3;
+  color: #155ae3;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cancel-button {
+  padding: 8px 10px;
+  border-color: red;
+  background-color: #f9f2f2;
+  color: red;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.input-container input {
+  padding: 8px;
+  width: 400px;
+  margin: 8px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+}
+
+.add-img {
+  font-weight: bold;
+  padding: 12px 16px;
+  border: none;
+  background-color: #1e96e7;
+  color: white;
+  border-radius: 4px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo-card {
+  width: 300px;
+  /* border: 2px solid; */
+  padding: 10px 10px 0px 10px;
+  margin: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-cover {
+  height: 170px;
+  overflow: hidden;
+}
+
+.photo-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+.photo-caption h4{
+  margin: 0;
+}
+
+img {
+  max-width: 300px;
 }
